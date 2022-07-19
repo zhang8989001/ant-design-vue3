@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "npm run newColor && vite",
-    "build": "npm run newColor && vite build",
+    "dev": "npm run theme && vite",
+    "build": "npm run theme && vite build",
     "preview": "vite preview",
-    "newColor": "node scripts/color"
+    "theme": "node scripts/theme"
   },
   "dependencies": {
     "ant-design-vue": "^3.2.0",
