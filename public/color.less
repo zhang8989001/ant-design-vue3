@@ -5,7 +5,8 @@
 @layout-body-background: #f0f2f5;
 @btn-primary-bg: #cc1f9d;
 @layout-header-background: #001529;
-@my-blue: @primary-color;
+@my-blue: #cccccc;
+@yi-black: #111111;
 html {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 body {color: @text-color;background-color: #fff;}
 h1,
@@ -1610,7 +1611,7 @@ tr.ant-table-expanded-row:hover > td {background: #fbfbfb;}
 .ant-tag-blue-inverse {color: #fff;background: #1890ff;border-color: #1890ff;}
 .ant-tag-geekblue {color: #1d39c4;background: #f0f5ff;border-color: #adc6ff;}
 .ant-tag-geekblue-inverse {color: #fff;background: #2f54eb;border-color: #2f54eb;}
-.ant-tag-purple {color: #531dab;background: #f9f0ff;border-color: #d3adf7;}
+.ant-tag-purple {color: #531dab;background: color(~`colorPalette("@{btn-primary-bg}", 1)`);border-color: #d3adf7;}
 .ant-tag-purple-inverse {color: #fff;background: #722ed1;border-color: #722ed1;}
 .ant-tag-success {color: #52c41a;background: #f6ffed;border-color: #b7eb8f;}
 .ant-tag-processing {color: @primary-color;background: color(~`colorPalette("@{primary-color}", 1)`);border-color: color(~`colorPalette("@{primary-color}", 3)`);}
@@ -1833,6 +1834,26 @@ a.ant-typography.ant-typography-disabled:hover, .ant-typography a.ant-typography
 .ant-upload-list-picture-card .ant-upload-list-item-uploading.ant-upload-list-item {background-color: #fafafa;}
 .ant-upload-list .ant-upload-animate-inline-appear, .ant-upload-list .ant-upload-animate-inline-enter, .ant-upload-list .ant-upload-animate-inline-leave {animation-fill-mode: cubic-bezier(0.78, 0.14, 0.15, 0.86);}
 #app {background-color: @my-blue;}
+.color.blue1 {background-color: #ffeae6;}
+.color.blue2 {background-color: #ffafa3;}
+.color.blue3 {background-color: #ff887a;}
+.color.blue4 {background-color: #ff5d52;}
+.color.blue5 {background-color: #ff3029;}
+.color.blue6 {background-color: red;}
+.color.blue7 {background-color: #d90007;}
+.color.blue8 {background-color: #b3000c;}
+.color.blue9 {background-color: #8c000e;}
+.color.blue10 {background-color: #66000e;}
+.color.black1 {background-color: color(~`colorPalette("@{yi-black}", 1)`);}
+.color.black2 {background-color: color(~`colorPalette("@{yi-black}", 2)`);}
+.color.black3 {background-color: color(~`colorPalette("@{yi-black}", 3)`);}
+.color.black4 {background-color: color(~`colorPalette("@{yi-black}", 4)`);}
+.color.black5 {background-color: color(~`colorPalette("@{yi-black}", 5)`);}
+.color.black6 {background-color: @yi-black;}
+.color.black7 {background-color: color(~`colorPalette("@{yi-black}", 7)`);}
+.color.black8 {background-color: color(~`colorPalette("@{yi-black}", 8)`);}
+.color.black9 {background-color: color(~`colorPalette("@{yi-black}", 9)`);}
+.color.black10 {background-color: color(~`colorPalette("@{yi-black}", 1)`);}
 .bezierEasingMixin() {
 @functions: ~`(function() {var NEWTON_ITERATIONS = 4;var NEWTON_MIN_SLOPE = 0.001;var SUBDIVISION_PRECISION = 0.0000001;var SUBDIVISION_MAX_ITERATIONS = 10;var kSplineTableSize = 11;var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);var float32ArraySupported = typeof Float32Array === 'function';function A (aA1, aA2) { return 1.0 - 3.0 * aA2 + 3.0 * aA1; }
   function B (aA1, aA2) { return 3.0 * aA2 - 6.0 * aA1; }

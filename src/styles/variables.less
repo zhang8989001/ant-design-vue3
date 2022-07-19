@@ -1,4 +1,40 @@
 @import "~ant-design-vue/lib/style/themes/default.less";
+@import "~ant-design-vue/lib/style/color/colorPalette.less";
+
 @primary-color: #cc1f9d;
 @btn-primary-bg: #cc1f9d;
-@my-blue: #cc1f9d;
+@my-blue: #cccccc;
+
+@my-color-1: color(~`colorPalette("@{my-color-6}", 1) `);
+@my-color-2: color(~`colorPalette("@{my-color-6}", 2) `);
+@my-color-3: color(~`colorPalette("@{my-color-6}", 3) `);
+@my-color-4: color(~`colorPalette("@{my-color-6}", 4) `);
+@my-color-5: color(~`colorPalette("@{my-color-6}", 5) `);
+@my-color-6: red;
+@my-color-7: color(~`colorPalette("@{my-color-6}", 7) `);
+@my-color-8: color(~`colorPalette("@{my-color-6}", 8) `);
+@my-color-9: color(~`colorPalette("@{my-color-6}", 9) `);
+@my-color-10: color(~`colorPalette("@{my-color-6}", 10) `);
+
+// 此种写法不会导致颜色变更
+// @my-pinkgreen-1: color(~`colorPalette("@{my-pinkgreen-6}", 1) `);
+// @my-pinkgreen-2: color(~`colorPalette("@{my-pinkgreen-6}", 2) `);
+// @my-pinkgreen-3: color(~`colorPalette("@{my-pinkgreen-6}", 3) `);
+// @my-pinkgreen-4: color(~`colorPalette("@{my-pinkgreen-6}", 4) `);
+// @my-pinkgreen-5: color(~`colorPalette("@{my-pinkgreen-6}", 5) `);
+// @my-pinkgreen-6: @my-blue;
+// @my-pinkgreen-7: color(~`colorPalette("@{my-pinkgreen-6}", 7) `);
+// @my-pinkgreen-8: color(~`colorPalette("@{my-pinkgreen-6}", 8) `);
+// @my-pinkgreen-9: color(~`colorPalette("@{my-pinkgreen-6}", 9) `);
+// @my-pinkgreen-10: color(~`colorPalette("@{my-pinkgreen-6}", 10) `);
+
+@yi-black: #111111;
+@yi-black-1: color(~`colorPalette("@{yi-black}", 1) `);
+@yi-black-2: color(~`colorPalette("@{yi-black}", 2) `);
+@yi-black-3: color(~`colorPalette("@{yi-black}", 3) `);
+@yi-black-4: color(~`colorPalette("@{yi-black}", 4) `);
+@yi-black-5: color(~`colorPalette("@{yi-black}", 5) `);
+@yi-black-7: color(~`colorPalette("@{yi-black}", 7) `);
+@yi-black-8: color(~`colorPalette("@{yi-black}", 8) `);
+@yi-black-9: color(~`colorPalette("@{yi-black}", 9) `);
+@yi-black-10: color(~`colorPalette("@{yi-black}", "10") `);

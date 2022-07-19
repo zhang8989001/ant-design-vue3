@@ -2,10 +2,14 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
 function resolve() {
-  return {
-    "@": path.resolve(__dirname, "./src"),
-    "~": path.resolve(__dirname, "./node_modules"),
-  };
+  return [
+    { find: "@", replacement: path.resolve(__dirname, "./src") },
+    { find: "~", replacement: path.resolve(__dirname, "./node_modules") },
+    {
+      find: /^~/,
+      replacement: "",
+    },
+  ];
 }
 
 // https://vitejs.dev/config/
@@ -17,7 +21,10 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
-      less: { javascriptEnabled: true },
+      less: {
+        javascriptEnabled: true,
+        additionalData: `@import "@/styles/variables.less";`, //全局引用样式变量
+      },
     },
   },
 });

@@ -14,6 +14,8 @@ const options = {
     "@btn-primary-bg",
     "@layout-header-background",
     "@my-blue",
+    "@yi-black",
+    "@my-pinkgreen-6",
   ],
 
   outputFilePath: path.join(__dirname, "../public/color.less"),

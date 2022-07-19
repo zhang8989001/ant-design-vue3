@@ -113,6 +113,8 @@ const huan = () => {
       "@link-color": color.value,
       "@btn-primary-bg": color.value,
       "@my-blue": color.value,
+      "@yi-black": color.value,
+      "@my-pinkgreen-6": color.value,
     })
     .then(() => {
       console.log("成功", window.less);
