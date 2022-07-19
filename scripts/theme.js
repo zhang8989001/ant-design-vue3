@@ -1,9 +1,9 @@
 const path = require("path");
 const { generateTheme } = require("antd-theme-generator");
 const options = {
-  antDir: path.join(__dirname, "./node_modules/ant-design-vue"), //对应具体位置
-  stylesDir: path.join(__dirname, "./src/styles"), //对应具体位置
-  varFile: path.join(__dirname, "./src/styles/variables.less"), //对应具体位置
+  antDir: path.join(__dirname, "../node_modules/ant-design-vue"), //对应具体位置
+  stylesDir: path.join(__dirname, "../src/styles"), //对应具体位置
+  varFile: path.join(__dirname, "../src/styles/variables.less"), //对应具体位置
   themeVariables: [
     "@primary-color",
     "@secondary-color",
@@ -13,9 +13,10 @@ const options = {
     "@layout-body-background",
     "@btn-primary-bg",
     "@layout-header-background",
+    "@my-blue",
   ],
 
-  outputFilePath: path.join(__dirname, "./public/color.less"),
+  outputFilePath: path.join(__dirname, "../public/color.less"),
   customColorRegexArray: [/^fade\(.*\)$/],
 };
 generateTheme(options)

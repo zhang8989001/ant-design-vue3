@@ -5,6 +5,7 @@
 @layout-body-background: #f0f2f5;
 @btn-primary-bg: #cc1f9d;
 @layout-header-background: #001529;
+@my-blue: @primary-color;
 html {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
 body {color: @text-color;background-color: #fff;}
 h1,
@@ -1831,6 +1832,7 @@ a.ant-typography.ant-typography-disabled:hover, .ant-typography a.ant-typography
 .ant-upload-list-picture-card .ant-upload-list-item-actions .anticon-eye:hover, .ant-upload-list-picture-card .ant-upload-list-item-actions .anticon-download:hover, .ant-upload-list-picture-card .ant-upload-list-item-actions .anticon-delete:hover {color: #fff;}
 .ant-upload-list-picture-card .ant-upload-list-item-uploading.ant-upload-list-item {background-color: #fafafa;}
 .ant-upload-list .ant-upload-animate-inline-appear, .ant-upload-list .ant-upload-animate-inline-enter, .ant-upload-list .ant-upload-animate-inline-leave {animation-fill-mode: cubic-bezier(0.78, 0.14, 0.15, 0.86);}
+#app {background-color: @my-blue;}
 .bezierEasingMixin() {
 @functions: ~`(function() {var NEWTON_ITERATIONS = 4;var NEWTON_MIN_SLOPE = 0.001;var SUBDIVISION_PRECISION = 0.0000001;var SUBDIVISION_MAX_ITERATIONS = 10;var kSplineTableSize = 11;var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);var float32ArraySupported = typeof Float32Array === 'function';function A (aA1, aA2) { return 1.0 - 3.0 * aA2 + 3.0 * aA1; }
   function B (aA1, aA2) { return 3.0 * aA2 - 6.0 * aA1; }
